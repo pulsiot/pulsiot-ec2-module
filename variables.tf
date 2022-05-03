@@ -25,10 +25,16 @@ variable "env_name" {
 variable "key_pair" {
   description = "Enter the name of Key Pair which you want to use with this EC2 Instance:"
   type        = string
-  default     = "anish"
+  default     = null
 }
 
 variable "ami_id" {
   description = "Enter the AMI ID for the Machine Image you want:"
   type        = string
+}
+
+variable "security_groups" {
+  description = "Enter the security group you want:"
+  type = list
+  default = null
 }
