@@ -1,4 +1,5 @@
 resource "aws_instance" "pulsiot_ec2_instance" {
+  depends_on = [var.security_groups]
   ami           = var.ami_id
   instance_type = var.inst_type
   key_name = var.key_pair
