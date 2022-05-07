@@ -1,7 +1,7 @@
 variable "inst_type" {
   description = "Enter the EC2 Instance Type:"
-  type        = string 
-  default     = "t3.micro" 
+  type        = string
+  default     = "t3.micro"
 }
 
 variable "inst_name" {
@@ -35,6 +35,6 @@ variable "ami_id" {
 
 variable "security_groups" {
   description = "Enter the security group you want:"
-  type  = any
-  default = null
+  type        = any
+  default     = null
 }
