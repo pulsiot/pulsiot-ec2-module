@@ -35,5 +35,6 @@ variable "ami_id" {
 
 variable "security_groups" {
   description = "Enter the security group you want:"
+  type  = any
   default = null
 }
